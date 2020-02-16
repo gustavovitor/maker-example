@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/car")
-public class CarResource extends ResourceMaker<CarService, Car> {}
+public class CarResource extends ResourceMaker<CarService, Car, Long> {}
 
 /*
 * This resource are made using ResourceMaker, using this maker, you can
