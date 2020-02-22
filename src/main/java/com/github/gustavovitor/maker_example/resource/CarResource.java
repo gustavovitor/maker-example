@@ -1,6 +1,6 @@
 package com.github.gustavovitor.maker_example.resource;
 
-import br.com.gustavomiranda.maker.resource.ResourceMaker;
+import com.github.gustavovitor.maker.resource.MongoResourceMaker;
 import com.github.gustavovitor.maker_example.domain.Car;
 import com.github.gustavovitor.maker_example.service.CarService;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/car")
-public class CarResource extends ResourceMaker<CarService, Car, Long> {}
+public class CarResource extends MongoResourceMaker<CarService, Car, Long> {}
 
 /*
 * This resource are made using ResourceMaker, using this maker, you can
