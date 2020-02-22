@@ -1,6 +1,6 @@
 package com.github.gustavovitor.maker_example.repository.specification;
 
-import br.com.gustavomiranda.maker.repository.SpecificationBase;
+import com.github.gustavovitor.maker.repository.SpecificationBase;
 import com.github.gustavovitor.maker_example.domain.Car;
 
 import javax.management.ReflectionException;

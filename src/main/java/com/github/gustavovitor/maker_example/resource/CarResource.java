@@ -1,6 +1,6 @@
 package com.github.gustavovitor.maker_example.resource;
 
-import br.com.gustavomiranda.maker.resource.ResourceMaker;
+import com.github.gustavovitor.maker.resource.ResourceMaker;
 import com.github.gustavovitor.maker_example.domain.Car;
 import com.github.gustavovitor.maker_example.service.CarService;
 import org.springframework.web.bind.annotation.RequestMapping;
