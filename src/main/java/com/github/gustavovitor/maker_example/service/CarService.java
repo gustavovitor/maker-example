@@ -7,4 +7,24 @@ import com.github.gustavovitor.maker_example.repository.specification.CarSpecifi
 import org.springframework.stereotype.Service;
 
 @Service
-public class CarService extends MongoServiceMaker<CarRepository, Car, Long, Car, CarSpecification> {}
+public class CarService extends MongoServiceMaker<CarRepository, Car, Long, Car, CarSpecification> {
+    @Override
+    public void beforeInsert(Car object) {
+        // Business rules here.
+    }
+
+    @Override
+    public void beforeUpdate(Long objectId, Car object) {
+        // Business rules here.
+    }
+
+    @Override
+    public void beforePatch(Car object) {
+        // Business rules here.
+    }
+
+    @Override
+    public void beforeDelete(Long objectId) {
+        // Business rules here.
+    }
+}
