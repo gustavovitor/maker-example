@@ -26,8 +26,8 @@
 
         <dependency>
             <groupId>com.github.gustavovitor</groupId>
-            <artifactId>maker-nosql</artifactId>
-            <version>0.0.3</version>
+            <artifactId>maker-mongo</artifactId>
+            <version>0.0.5-SNAPSHOT</version>
         </dependency>
 
         <dependency>
