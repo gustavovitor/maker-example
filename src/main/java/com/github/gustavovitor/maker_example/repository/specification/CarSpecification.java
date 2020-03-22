@@ -11,12 +11,9 @@ import javax.management.ReflectionException;
 import static java.util.Objects.nonNull;
 
 public class CarSpecification extends MongoSpecificationBase<Car> {
-
     public CarSpecification(Car car) throws ReflectionException {
         super(car);
     }
-
-    public CarSpecification() { }
 
     @Override
     public Predicate toPredicate() {
