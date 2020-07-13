@@ -20,13 +20,14 @@ public class CarSpecification extends SpecificationBase<Car> {
     }
 
     @Override
-    public Predicate toPredicate(Root<Car> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
+    protected List<Predicate> predicate(Root<Car> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder, Car object) {
         List<Predicate> predicates = new ArrayList<>();
 
-        if (nonNull(getObject().getModel())) {
-            predicates.add(criteriaBuilder.like(root.get("model"), "%" + getObject().getModel() + "%"));
+        if (nonNull(object.getModel())) {
+            predicates.add(criteriaBuilder.like(root.get("model"), "%" + object.getModel() + "%"));
         }
 
-        return criteriaBuilder.and(predicates.toArray(new Predicate[predicates.size()]));
+        return predicates;
     }
+
 }
